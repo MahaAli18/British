@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+   
+
+   /* body{
+  padding-top:50px;
+  background: #555;
+} */
+.flip {
+  /* -webkit-perspective: 800;   
+          perspective: 800; */
+        /* position: relative; */
+        text-align: center;
+}
+.flip .card.flipped {
+  -webkit-transform: rotatey(-180deg);
+          transform: rotatey(-180deg);
+}
+.flip .card {
+    /* width: 270px;
+    height: 178px; */
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    background-color: #fff;
+   
+}
+.flip .card .face {
+  -webkit-backface-visibility: hidden ;
+    backface-visibility: hidden ;
+   z-index: 2;
+}
+.flip .card .front {
+   /* position: absolute; */
+   /* width: 270px; */
+   z-index: 1;
+}
+/* .flip .card .front img{
+  width: 270px;
+  height: 100%;
+} */
+/* .flip .card .img {
+   position: relaitve;
+   width: 270px;
+   height: 178px;
+   z-index: 1;
+   border: 2px solid #000;
+} */
+.flip .card .back {
+  padding-top: 10%;
+  -webkit-transform: rotatey(-180deg);
+          transform: rotatey(-180deg);
+  position: absolute;
+}
+/* .inner{
+  margin:0px !important;
+  width: 270px;
+} */
+  
+  </style>
+  
+</head>
+
+<body>
+  <!--Start of Tawk.to Script--> 
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5b806f5ef31d0f771d841fb9/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+  
+  <!-- End of Tawk.to Script -->
+  <nav class="navbar navbar-toggleable navbar-inverse  fixed-top">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#" class="navbar-brand">PAPER Editor</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services-head-section" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about-head-section" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#footer-main" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Home section-->
+  <header id="home-section">
+    <div class="dark-overlay">
+      <div class="home-inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 d-none d-md-block">
+                <h1 class="display-4 text-danger"><b>No One Does </b></h1><h1 class="display-4"><b>Academic Like</b></h1><h1 class="display-4 text-danger"><b>Paper Editor!</b></h1><br>
+                <p>Is it getting hard to manage your task along with a full time job? Are you busy in getting job experience and getting hard for you to complete your thesis? You are just a call away to the solution.</p>
+                <p>Our editors will help you write your essays, assignments, dissertations within no time</p>
+                
+                <div class="d-flex flex-row">
+                  <div class="p-4 align-self-start">
+                      <i class="fa fa-edit"></i>
+                  </div>
+                  <div class="p-4 align-self-end">
+                  DISSERTATION WRITTING
+                  </div>
+                </div>
+                <div class="d-flex flex-row">
+                    <div class="p-4 align-self-start">
+                      <i class="fa fa-book"></i>
+                    </div>
+                    <div class="p-4 align-self-end">
+                      ESSAYS WRITTING
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row">
+                      <div class="p-4 align-self-start">
+                        <i class="fa fa-edit"></i>
+                      </div>
+                      <div class="p-4 align-self-end">
+                       ASSIGNMENT WRITTING
+                      </div>
+                    </div>
+                  </div>
+            <div class="col-md-4">
+                <div class="flip">
+              <div class="card card-primary card-form text-center">
+                <div id="after" class="card-block">
+                    <div class="face front"> 
+                        <div class="inner">
+                 <h3>Order Now</h3>
+                 <form id="form-of-email" action="" name="_next" value="http://localhost:3000/index.html" method="POST"/>
+                    <div class="form-group">
+                      <input type="text" name="username" class="form-control form-control-lg" placeholder="Full name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control form-control-lg" placeholder="Email" required>
+                      </div>
+                      <div class="form-group">
+                          <input type="tel" name="phone" class="form-control form-control-lg" placeholder="Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="message" class="form-control form-control-lg" placeholder="Message" required>
+                          </div>
+                          <p>Your personal information will remain intact with us</p>
+                          <input type="submit" value="Submit" class="btn btn-outline-danger "/>
+                  </form>
+                </div>
+              </div> 
+              
+            </div>
+            <div class="face back"> 
+                <div class="inner text-center"> 
+                  <h3>Improved efficiency through automation</h3>
+               </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  
+
+  <!-- SERVICES HEAD -->
+  <section id="services-head-section">
+    <div class="container cont2">
+      <div class="row">
+        <div class="col text-center">
+          <div class="py-5">
+            <h1 class="display-4 text-danger">SERVICES</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nulla ducimus veniam repellat nostrum, placeat aperiam
+              maiores! Dicta, voluptatum molestiae.</p>
+            <a href="#" class="btn btn-outline-secondary">Find Out More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="discount-head-section" class="py-5">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6 cont1">
+                <img src="img/adult-advertisement-airport-1114376.jpg" alt="" class="img-fluid mb-3 rounded-circle">
+              </div>
+          <div class="col-md-6  cont2">
+            <h2 class="text-center text-danger">SPECIAL OFFERS</h2>
+          
+            <div class="d-flex flex-row">
+              <div class="p-4 align-self-start">
+                <i class="fa fa-check"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                 <h4> Amazing Discounts: </h4>We offer amazing discounts on multiple occasions to help clients save up!
+              </div>
+            </div>
+
+            <div class="d-flex flex-row">
+                <div class="p-4 align-self-start">
+                  <i class="fa fa-check"></i>
+                </div>
+                <div class="p-4 align-self-end">
+                   <h4>Book your Order :</h4> Place an order and let the writers work on it.
+                </div>
+              </div>
+  
+            <div class="d-flex flex-row">
+                <div class="p-4 align-self-start">
+                  <i class="fa fa-check"></i>
+                </div>
+                <div class="p-4 align-self-end">
+                    <h4> Get your work done: </h4> With our instant delivery option, you can get your order back before the deadline.
+                </div>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+  <!--Home icon section-->
+  <section id="home-icons" class="py-5">
+    <div class="container cont3">
+      <div class="row">
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fa fa-trophy mb-2"></i>
+          <h3 class="text-danger">Plagirism Free</h3>
+          <p>Our writing experts always check plagiarism before submitting your work.</p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fa fa-book mb-2"></i>
+          <h3 class="text-danger">Dissertation From Scratch</h3>
+          <p>Your order will be written just for you based on your instructions.</p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fa fa-edit mb-2"></i>
+          <h3 class="text-danger">Qualified Writers</h3>
+          <p>We have a team of experts and everyone has a single goal that is to provide ease to their customers at every step.</p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+            <i class="fa fa-comments mb-2"></i>
+            <h3 class="text-danger">Customer Satisfaction</h3>
+            <p>Customers are our first priority that is why our support staff is available 24/7 in order to resolve your issues. </p>
+          </div>
+          <div class="col-md-4 mb-4 text-center">
+              <i class="fa fa-signal mb-2"></i>
+              <h3 class="text-danger">Highest Quality</h3>
+              <p>We stand behind the quality of our services every time, no matter the subject or difficulty.</p>
+            </div>
+            <div class="col-md-4 mb-4 text-center">
+                <i class="fa fa-lock mb-2"></i>
+                <h3 class="text-danger">Fully Confidential</h3>
+                <p>We will never share the information you provide to anyone, unless you say so.</p>
+              </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CREATE HEAD -->
+  <section id="about-head-section">
+    <div class="container cont1">
+      <div class="row">
+        <div class="col text-center">
+          <div class="py-5">
+            <h1 class="display-4 text-danger">ABOUT US</h1>
+            <p class="lead">Our team comprises of well experienced PhD degree holders who know the precise process of editing and proofreading.
+              Your request is given full priority within our staff once we receive it. Our team takes after all the demonstrated necessities, guidelines, extra remarks, and determined subtle elements which enables us to be at the top of our game.
+              </p>
+            <a href="#" class="btn btn-outline-secondary">Find Out More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREATE SECTION -->
+  <section id="create-section" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6  cont3">
+          <h3>Our Core Values</h3>
+          <p>We have a team of experts and everyone has a single goal that is to provide ease to their customers at every step.</p>
+          <div class="d-flex flex-row">
+            <div class="p-4 align-self-start">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="p-4 align-self-end">
+                Customers are our first priority that is why our support staff is available 24/7 in order to resolve your issues.
+            </div>
+          </div>
+
+          <div class="d-flex flex-row">
+              <div class="p-4 align-self-start">
+                <i class="fa fa-check"></i>
+              </div>
+              <div class="p-4 align-self-end">
+                  We know that clients’ privacy is very important and we give value to each of our clients’ privacy that is why our policy is based on the Money back Guarantee (MBG).
+              </div>
+            </div>
+
+          <div class="d-flex flex-row">
+            <div class="p-4 align-self-start">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="p-4 align-self-end">
+                We always make sure that the work should be plagiarized free with 100% unique content.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="img/black-and-white-black-and-white-blur-34088.jpg" alt="" class="img-fluid mb-3 rounded-circle">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Testimonial section-->
+  <section id="testimonial-sec" class="my-0 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="info-header mb-5">
+            <h1 class="text-danger pb-3 mt-5">
+              OUR CLIENTS
+            </h1>
+            <p class="lead pb-3">
+                What Our Customers Think About Us!
+            </p>
+          </div>
+          <div class="row pb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <div class="card-block">
+                  <img src="img/first.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                  <h3>Susan Williams</h3>
+                  <p>It was my first using any online paper service. I liked the quality of the work and the friendly support staff who answered all my questions, they helped me in the best possible way.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <div class="card-block">
+                  <img src="img/second.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                  <h3>Grace Smith </h3>
+                  <p>Thanks for the timely delivery and as I wanted. I skimmed through it and was very glad I'd chosen you. I’d never write anything this awesome.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <div class="card-block">
+                  <img src="img/beautiful-beauty-businesswoman-157741.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                  <h3>Laura klein</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla commodi expedita deleniti, minima enim
+                    maiores?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <div class="card-block">
+                  <img src="img/achievement-adult-business-937481.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                  <h3>John Doe</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla commodi expedita deleniti, minima enim
+                    maiores?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--MAin Footer-->
+
+  
+
+  <footer class="footer-distributed py-5" >
+
+    <div class="footer-left">
+
+      <h3 style="font-family: Arial, Helvetica, sans-serif;">UK<span>EditorsHelp</span></h3>
+
+      <p class="footer-links">
+        <a href="#" class="link-1">Home</a>
+        
+        <a href="#">Blog</a>
+      
+        <a href="#">Pricing</a>
+      
+        <a href="#">About</a>
+        
+        <a href="#">Faq</a>
+        
+        <a href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-about">
+        Disclaimer: 
+        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+      </p>
+    </div>
+
+    <div class="footer-center">
+
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+020 3290 9905</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:ansar_ali@hotmail.com" style="color:white;">ansar_ali@hotmail.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About the company</span>
+        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+
+      </div>
+
+    </div>
+    <hr style="background-color:  aliceblue"> 
+    
+    <p class="footer-company-name text-center" style="color: azure">Company Name © 2015</p>
+
+  </footer>
+
+  
+
+    
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="js/scrolling.js"></script>
+
+<script>
+    $('.flip').submit(function(){
+        $(this).find('.card').toggleClass('flipped');
+
+ });
+</script>
+<!-- <script>
+  var card = document.querySelector('.card');
+   card.addEventListener( 'submit', function() {
+  card.classList.toggle('is-flipped');
+});
+
+  // document.getElementById('form-of-email').addEventListener('submit', event => {
+  //    event.preventDefault();
+  
+
+</script> -->
+</html>
